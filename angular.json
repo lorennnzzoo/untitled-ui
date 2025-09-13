@@ -22,8 +22,10 @@
               }
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
-            ]
+            ],
+            "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js"]
           },
           "configurations": {
             "production": {
@@ -75,8 +77,10 @@
               }
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
-            ]
+            ],
+            "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js"]
           }
         }
       }
