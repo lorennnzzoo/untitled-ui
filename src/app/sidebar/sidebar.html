@@ -1,18 +1,85 @@
-<div class="w-72 h-screen bg-[#262A2B] flex justify-center">
+<div class="w-72 h-screen bg-[#29282B] flex justify-center">
 
     <div class="flex flex-col items-center">
 
 
-        <div class="p-5">
-            <app-profile/>
+        <div class="p-3 hover:bg-[#3C3C3D] m-3 rounded-lg hover:cursor-pointer">
+            <app-profile />
         </div>
-        
-        <app-route RouteIcon="{{'fa-solid fa-house'}}" RouteLabel="Home"></app-route>
-        
-        <div class="w-11/12 border border-gray-600"></div>
-        
+
+
+
+
+
+
+        <div class="w-11/12 p-2 mb-1 mt-10  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-house'}}" RouteLabel="Home"></app-route>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-expand'}}" RouteLabel="My Projects"></app-route>
+        </div>
+
+
+
+
+
+        <div class="w-11/12 my-3 border-t border-[#5e5e5e]"></div>
+
+        <div class="w-11/12 p-2 mb-1 mt-2  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="0" RouteIcon="{{'fa-solid fa-folder'}}"
+                RouteLabel="Projects"></app-route-with-stat>
+        </div>
+
+
+        <div class="w-11/12 p-2 mb-1   hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="48" RouteLabel="View all"></app-route-with-stat>
+        </div>
+
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="6" RouteLabel="Recent"></app-route-with-stat>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1   hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="4" RouteLabel="Favorites"></app-route-with-stat>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="22" RouteLabel="Shared"></app-route-with-stat>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="14" RouteLabel="Advanced"></app-route-with-stat>
+        </div>
+
+        <div class="w-11/12 my-3 border-t border-[#5e5e5e]"></div>
+
+
+        <div class="w-11/12 p-2 mt-2 mb-1 hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-house'}}" RouteLabel="All files"></app-route>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-expand'}}" RouteLabel="Team members"></app-route>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-boxes-stacked'}}" RouteLabel="Appearance"></app-route>
+        </div>
+
+        <div class="w-11/12 my-3 border-t border-[#5e5e5e]"></div>
+
+        <div class="w-11/12 p-2 mb-1 mt-2  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-question'}}" RouteLabel="Support"></app-route>
+        </div>
+
+        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route RouteIcon="{{'fa-solid fa-gear'}}" RouteLabel="Settings"></app-route>
+        </div>
+
         <div class="mt-5">
-            
+
         </div>
     </div>
 

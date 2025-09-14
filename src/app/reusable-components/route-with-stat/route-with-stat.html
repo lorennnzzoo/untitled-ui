@@ -1,0 +1,13 @@
+<div class="flex flex-row gap-3 items-center">
+    <i [ngClass]="RouteIcon ? [RouteIcon, 'text-[#99989B]'] : 'invisible w-5'"></i>
+
+    <p class="text-lg font-semibold text-[#99989B] group-hover:text-white">
+        {{RouteLabel}}
+    </p>
+
+    
+    
+    <p class="ml-auto rounded-sm font-semibold bg-[#3C3C3D] px-2 text-lg text-[#99989B]">
+        {{RouteStat===0?'—':RouteStat}}
+    </p>
+</div>
