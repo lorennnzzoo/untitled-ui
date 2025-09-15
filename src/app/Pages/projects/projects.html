@@ -1,0 +1,114 @@
+<div class="my-5 mx-7">
+
+
+    <div class="flex flex-row justify-between items-center">
+        <p class="text-white text-lg font-semibold">All Projects</p>
+        <div
+            class="bg-[#29282B] flex flex-row justify-between px-3 py-2  rounded-lg border border-[#696969] items-center hover:cursor-pointer hover:bg-[#3C3C3D] w-32">
+            <i class="fa-solid fa-plus text-[#99989B]"></i>
+            <p class="text-sm text-white font-semibold">New Project</p>
+        </div>
+    </div>
+
+
+    <div class="w-full mt-5">
+        <p class="text-white text-sm font-semibold">Recent Projects</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+        <div
+            class="relative h-24 bg-[#29282B] border border-[#696969] rounded-xl hover:cursor-pointer hover:bg-[#3C3C3D] flex items-center">
+            <div class="flex flex-row items-center  gap-3 p-5">
+
+                <app-folder></app-folder>
+                <div>
+                    <p class="text-white text-sm font-semibold">Core</p>
+                    <p class="text-[#99989B] text-sm font-semibold">8 files</p>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-ellipsis-vertical text-[#99989B] absolute top-2 right-2 py-2 hover:text-white cursor-pointer"></i>
+        </div>
+        <div
+            class="relative h-24 bg-[#29282B] border border-[#696969] rounded-xl hover:cursor-pointer hover:bg-[#3C3C3D] flex items-center">
+            <div class="flex flex-row items-center  gap-3 p-5">
+
+                <app-folder></app-folder>
+                <div>
+                    <p class="text-white text-sm font-semibold">Backend</p>
+                    <p class="text-[#99989B] text-sm font-semibold">8 files</p>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-ellipsis-vertical text-[#99989B] absolute top-2 right-2 py-2 hover:text-white cursor-pointer"></i>
+        </div>
+        <div
+            class="relative h-24 bg-[#29282B] border border-[#696969] rounded-xl hover:cursor-pointer hover:bg-[#3C3C3D] flex items-center">
+            <div class="flex flex-row items-center  gap-3 p-5">
+
+                <app-folder></app-folder>
+                <div>
+                    <p class="text-white text-sm font-semibold">Hardware</p>
+                    <p class="text-[#99989B] text-sm font-semibold">8 files</p>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-ellipsis-vertical text-[#99989B] absolute top-2 right-2 py-2 hover:text-white cursor-pointer"></i>
+        </div>
+    </div>
+
+    <p class="text-white text-sm my-8 font-semibold">All Projects</p>
+
+
+    <div class="flex flex-row justify-between h-5">
+        <div class="flex flex-row gap-3">
+            <div class="group cursor-pointer">
+                <p class="text-sm text-white group-hover:text-white">View All</p>
+                <div class="w-full border-t my-3 border-white"></div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <p class="text-sm text-[#99989B] group-hover:text-white">Recent</p>
+            </div>
+
+            <div class="group cursor-pointer">
+
+                <p class="text-sm text-[#99989B] group-hover:text-white">Favorites</p>
+            </div>
+            <div class="group cursor-pointer">
+
+                <p class="text-sm text-[#99989B] group-hover:text-white">Shared</p>
+            </div>
+            <div class="group cursor-pointer">
+
+                <p class="text-sm text-[#99989B] group-hover:text-white">Archived</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row gap-3">
+            <div class="flex flex-row gap-3 items-center border border-[#696969] py-4 px-2 rounded-lg">
+                <i class="fa-solid fa-magnifying-glass text-[#696969]"></i>
+                <input class="focus:outline-none text-white" type="text"/>
+            </div>
+            <div class="flex flex-row gap-2 items-center border border-[#696969] py-4 px-2 rounded-lg hover:cursor-pointer hover:bg-[#3C3C3D]">
+                <i class="fa-solid fa-filter text-[#99989B]"></i>
+                <p class="text-[#99989B]">Filters</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-10 h-[500px] w-full bg-[#29282B] rounded-lg border border-[#696969] flex items-center justify-center">
+        <div class="flex flex-col gap-3 items-center">
+
+            <app-folder-100></app-folder-100>
+            <p class="text-white">No projects found</p>
+            <div
+                class="bg-[#3C3C3D] flex flex-row justify-between px-3 py-2  rounded-lg border border-[#696969] items-center hover:cursor-pointer hover:bg-[#3C3C3D] w-32">
+                <i class="fa-solid fa-plus text-[#99989B]"></i>
+                <p class="text-sm text-white font-semibold">New Project</p>
+            </div>
+        </div>
+    </div>
+
+</div>

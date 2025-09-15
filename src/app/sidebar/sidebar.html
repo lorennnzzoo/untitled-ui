@@ -12,11 +12,11 @@
 
 
 
-        <div class="w-11/12 p-2 mb-1 mt-10  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+        <div class="w-11/12 p-2 mb-1 mt-3  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
             <app-route RouteIcon="{{'fa-solid fa-house'}}" RouteLabel="Home"></app-route>
         </div>
 
-        <div class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+        <div  class="w-11/12 p-2 mb-1  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
             <app-route RouteIcon="{{'fa-solid fa-expand'}}" RouteLabel="My Projects"></app-route>
         </div>
 
@@ -26,9 +26,9 @@
 
         <div class="w-11/12 my-3 border-t border-[#5e5e5e]"></div>
 
-        <div class="w-11/12 p-2 mb-1 mt-2  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
-            <app-route-with-stat [RouteStat]="0" RouteIcon="{{'fa-solid fa-folder'}}"
-                RouteLabel="Projects"></app-route-with-stat>
+        <div routerLink="" routerLinkActive="bg-[#3C3C3D]"  #rla="routerLinkActive" class="w-11/12 p-2 mb-1 mt-2  hover:cursor-pointer rounded-sm hover:bg-[#3C3C3D] group">
+            <app-route-with-stat [RouteStat]="0" RouteIcon="{{'fa-solid fa-folder'}}" [Active]="rla.isActive"
+                RouteLabel="Projects" ></app-route-with-stat>
         </div>
 
 

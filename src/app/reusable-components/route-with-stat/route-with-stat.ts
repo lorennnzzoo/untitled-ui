@@ -12,4 +12,5 @@ export class RouteWithStat {
 @Input() RouterLink!:string
 @Input() RouteIcon!:string
 @Input() RouteStat!:number
+@Input() Active:boolean=false;
 }

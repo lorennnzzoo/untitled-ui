@@ -21,20 +21,22 @@
     <div class="flex flex-grow bg-[#1F1F21] relative">
         <!-- Sidebar -->
         <div [ngClass]="{
-        'translate-x-0': isSidebarOpen,
-        '-translate-x-full': !isSidebarOpen
-      }"
-            class="fixed top-0 left-0  h-full bg-[#262A2B] transform transition-transform duration-300 z-50 md:static md:translate-x-0 md:block">
+              'translate-x-0': isSidebarOpen,
+              '-translate-x-full': !isSidebarOpen
+            }" class="fixed top-0 left-0 h-full  bg-[#262A2B] transform transition-transform duration-300 z-50 
+                   md:static md:translate-x-0 md:block">
             <app-sidebar></app-sidebar>
         </div>
 
+
         <!-- Overlay -->
         <div *ngIf="isSidebarOpen" (click)="toggleSidebar()"
-            class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"></div>
+            class="fixed inset-0 bg-black opacity-60 bg-opacity-50 z-40 md:hidden"></div>
 
         <!-- Main content -->
-        <div class="flex-grow ml-0 md:ml-64">
+        <div class="flex-grow">
             <router-outlet></router-outlet>
         </div>
+
     </div>
 </div>
