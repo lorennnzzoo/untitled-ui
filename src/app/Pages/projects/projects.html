@@ -1,4 +1,4 @@
-<div class="my-5 mx-7">
+<div class="my-5 mx-7 w-auto">
 
 
     <div class="flex flex-row justify-between items-center">
@@ -11,11 +11,12 @@
     </div>
 
 
-    <div class="w-full mt-5">
+    <div class=" mt-5">
         <p class="text-white text-sm font-semibold">Recent Projects</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+
         <div
             class="relative h-24 bg-[#29282B] border border-[#696969] rounded-xl hover:cursor-pointer hover:bg-[#3C3C3D] flex items-center">
             <div class="flex flex-row items-center  gap-3 p-5">
@@ -60,11 +61,11 @@
     <p class="text-white text-sm my-8 font-semibold">All Projects</p>
 
 
-    <div class="flex flex-row justify-between h-5">
-        <div class="flex flex-row gap-3">
+    <div class="w-full flex flex-col md:flex-row gap-5 justify-between">
+        <div class="flex flex-row flex-wrap gap-3">
             <div class="group cursor-pointer">
                 <p class="text-sm text-white group-hover:text-white">View All</p>
-                <div class="w-full border-t my-3 border-white"></div>
+                <div class="w-full border-t mt-3 border-white"></div>
             </div>
 
             <div class="group cursor-pointer">
@@ -85,12 +86,12 @@
             </div>
         </div>
 
-        <div class="flex flex-row gap-3">
-            <div class="flex flex-row gap-3 items-center border border-[#696969] py-4 px-2 rounded-lg">
+        <div class="flex flex-row flex-wrap gap-3">
+            <div class="flex flex-row gap-3 items-center border border-[#696969] py-1 md:py-2 px-2 rounded-lg">
                 <i class="fa-solid fa-magnifying-glass text-[#696969]"></i>
-                <input class="focus:outline-none text-white" type="text"/>
+                <input class="focus:outline-none text-white w-full" type="text"/>
             </div>
-            <div class="flex flex-row gap-2 items-center border border-[#696969] py-4 px-2 rounded-lg hover:cursor-pointer hover:bg-[#3C3C3D]">
+            <div class="flex flex-row gap-2 items-center border border-[#696969] py-1 md:py-2  px-2 rounded-lg hover:cursor-pointer hover:bg-[#3C3C3D]">
                 <i class="fa-solid fa-filter text-[#99989B]"></i>
                 <p class="text-[#99989B]">Filters</p>
             </div>
